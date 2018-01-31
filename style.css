@@ -1,6 +1,6 @@
 body {
-  font-size: 10pt;
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
   color: black;
   line-height: 14pt;
   padding-left: 5pt;
@@ -9,19 +9,13 @@ body {
 }
 
 h1 {
-  font: Helvetica, sans-serif;
+  font-size: 6vw;
   font-weight: bold;
-  line-height: 20pt;
 }
 
 p.subheader {
   font-weight: bold;
   color: #593d87;
-}
-
-img {
-  padding: 3pt;
-  float: right;
 }
 
 a {
