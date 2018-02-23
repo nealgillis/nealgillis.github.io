@@ -5,12 +5,13 @@ html {
 body {
 	color: #555;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	height: 100%;
-	line-height: 1.4;
+	line-height: 1.6;
 	margin: 0;
 	padding: 0;
 }
+
 
 
 .resize {
@@ -27,16 +28,31 @@ body {
 	height: 100%;
 }
 
+/* Used to display a different H2 on mobile. See @media (max-width: 568px) below */
+.smallScreen {
+  display: none;
+}
+
+.content {
+  margin: 0px 2px;
+}
+
+.social {
+  /* Holding */
+}
+
 h1 {
 	font-size: 1.9em;
+  margin-bottom: 0;
 }
 
 h2 {
-	font-size: 1.25em;
+  margin-top: 0;
+  font-size: 1.1em;
 }
 
 a {
-	color: #222;
+	color: #555;
 	text-decoration: none;
 }
 
@@ -45,30 +61,30 @@ a:active {
 	text-decoration: underline;
 }
 
-/*
-li {
-	margin-bottom: 0.5em;
+ul {
+  margin-left: 0;
+  padding-left: 0;
 }
-*/
 
-/*
-header {
-	position: relative;
-	-webkit-box-flex: 0;
-	-webkit-flex: none;
-	-ms-flex: none;
-	flex: none;
-	margin-top: 120px;
+li {
+	margin-bottom: 0.2em;
+  list-style-type: none;
 }
-*/
+
+
 
 
 @media (max-width: 992px) {
 	.resize {
 		padding: 100px 70px;
 	}
+  h2 {
+    margin-top: 0;
+    font-size: 1em;
+  }
 }
 
+/* Mobile size */
 @media (max-width: 568px) {
 	.resize {
 		padding: 50px 25px;
@@ -77,10 +93,23 @@ header {
 	header {
 		margin-top: 25px;
 	}
+  h2 {
+    margin-top: 0;
+    font-size: 1em;
+  }
 	.bg:after {
 		top: -200px;
 		left: -200px;
 		height: 500px;
 		width: 500px;
 	}
+  .wideScreen {
+    display: none;
+  }
+  .smallScreen {
+    display:inline;
+  }
+  .social {
+    line-height: 2em;
+  }
 }
