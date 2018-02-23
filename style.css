@@ -87,7 +87,7 @@ li {
 /* Mobile size */
 @media (max-width: 568px) {
 	.resize {
-		padding: 50px 25px;
+		padding: 0px 25px;
 		font-size: 18px;
 	}
 	header {
